@@ -22,6 +22,8 @@ stop.addEventListener('click',()=>{
 reset.addEventListener('click',()=>{
     secondss = "00"
     otherZeros = "00"
+    minutess = "00"
+    minutes.innerHTML = minutess
     seconds.innerHTML = secondss
     tens.innerHTML = otherZeros
 })
