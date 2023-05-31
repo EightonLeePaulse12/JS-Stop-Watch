@@ -46,3 +46,6 @@ function startTheTimer(){
         seconds.innerHTML = secondss
     }
 }
+
+
+console.log("GIT PROBLEMS SORTED")
