@@ -3,8 +3,10 @@ const stop = document.querySelector('#stop');
 const reset = document.querySelector('#reset');
 const timer = document.querySelector('#timer');
 const seconds = document.querySelector('#seconds');
+const minutes = document.querySelector('#minutes')
+let minutess = 00
 let secondss = 00
-let tenss = 00
+let otherZeros = 00
 const tens = document.querySelector('#tens');
 let empty;
 
@@ -19,31 +21,38 @@ stop.addEventListener('click',()=>{
 
 reset.addEventListener('click',()=>{
     secondss = "00"
-    tenss = "00"
+    otherZeros = "00"
     seconds.innerHTML = secondss
-    tens.innerHTML = tenss
+    tens.innerHTML = otherZeros
 })
 
 function startTheTimer(){
-    tenss++
+    otherZeros++
 
-    if(tenss <= 9){
-        tens.innerHTML = '0' + tenss
+    if(otherZeros <= 9){
+        tens.innerHTML = '0' + otherZeros
     }
 
-    if(tenss > 9){
-        tens.innerHTML = tenss
+    if(otherZeros > 9){
+        tens.innerHTML = otherZeros
     }
 
-    if (tenss > 99){
+    if (otherZeros > 99){
         secondss++;
         seconds.innerHTML = "0" + secondss;
-        tenss = 0
-        tens.innerHTML = "0" + tenss
+        otherZeros = 0
+        tens.innerHTML = "0" + otherZeros
     }
 
     if (secondss > 9){
         seconds.innerHTML = secondss
+    }
+
+    if (secondss > 59){
+        minutess++
+        minutes.innerHTML = "0" + minutess
+        secondss = 0
+        seconds.innerHTML = "0" + otherZeros
     }
 }
 
