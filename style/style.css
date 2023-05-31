@@ -6,9 +6,15 @@
     box-sizing: border-box;
 }
 
+html,
+body{
+    overflow: hidden;
+}
+
 body{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: rgb(250, 0, 159);
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
     font-weight:bold;
     text-align: center;
 }
@@ -38,7 +44,7 @@ p{
     color:white;
     font-weight:bold;
     font-size:2rem;
-    background-color: rgb(250, 0, 159);
+    background-color:#0648a3;
     border:3px solid black;
     border-radius:10px;
     cursor:pointer;
@@ -53,7 +59,7 @@ p{
     color:white;
     font-weight:bold;
     font-size:2rem;
-    background-color: rgb(250, 0, 159);
+    background-color:#0648a3;
     border:3px solid black;
     border-radius:10px;
     cursor:pointer;
@@ -67,7 +73,7 @@ p{
     color:white;
     font-weight:bold;
     font-size:2rem;
-    background-color: rgb(250, 0, 159);
+    background-color:#0648a3;
     border:3px solid black;
     border-radius:10px;
     cursor:pointer;
