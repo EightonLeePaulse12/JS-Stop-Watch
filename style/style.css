@@ -104,3 +104,17 @@ p {
     right: -30px;
   }
 }
+
+@media (max-width:462px){
+  #timer{
+    margin-top:1rem;
+  }
+
+  .buttons{
+    margin-top:6rem;
+  }
+
+  h1{
+    margin-top:0;
+  }
+}
